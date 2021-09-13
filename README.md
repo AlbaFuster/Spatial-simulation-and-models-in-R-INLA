@@ -1,4 +1,4 @@
-# Spatial_scenarios_simulation_CPUE
+# Spatial scenarios simulation and Random Sampling models R-INLA
 
 Simulation of three different spatial scenarios: (1) Random sampling (2) Preferential sampling and (3) Areal data sampling. For each of them, abundance/catches (response variable), bathymetry and effort (explanatory variables) were simulated.
 
@@ -12,8 +12,14 @@ The repository contains the development of three different simulations. All of t
 
 The following variables are simulated for each scenario:
 
-(a) Abundance/catches: response variable measured in tons.
+(a) Biomass/catches: response variable measured in tons.
 
 b) Effort: quantitative and continuous explanatory variable, measuring the time during which the gear is active.
 
 c) Bathymetry: quantitative and continuous explanatory variable, measures depth in meters.
+
+Once the simulation was carried out, the models for scenario (1) random sampling has been adjusted. In this case, the following two blocks of models have been adjusted: 
+
+I.  Models without zeros: the response variables catches and CPUE have been transformed by adding 0.1
+
+II. Models with zeros or hurdle models: zeros are modeled through a Bernouilli process. 
