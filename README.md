@@ -1,4 +1,4 @@
-# Spatial simulation and random sampling models R-INLA
+# Spatial simulation and models R-INLA
 
 Simulation of three different spatial scenarios: (1) Random sampling (2) Preferential sampling and (3) Areal data sampling. For each of them, abundance/catches (response variable), bathymetry and effort (explanatory variables) were simulated.
 
